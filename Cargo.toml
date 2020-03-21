@@ -1,0 +1,18 @@
+[package]
+name = "rs-debug-wasm-in-browser"
+version = "0.1.0"
+authors = ["Clinton Selke <clinuxrulz@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[[bin]]
+name = "test_server"
+path = "src/bin.rs"
+
+[dependencies]
+tokio-tungstenite = "0.10.1"
+tokio-tls = "0.3"
+tokio = { version = "0.2.13", features = ["full"] }
+env_logger = "0.7"
+futures-util = "0.3.4"
